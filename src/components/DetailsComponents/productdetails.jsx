@@ -6,7 +6,7 @@ import { Products } from '../products';
 import { MdOutlineVerifiedUser } from 'react-icons/md'
 import { BsTruck, BsArrowCounterclockwise } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
-import OffcanvasItems from '../CartComponents/OffCanvasItems/offcanvasitems';
+import OffcanvasItems from '../CartComponents/OffcanvasItems/offcanvasitems';
 import './ProductsDetails.css'
 
 function shuffleArray(array) {

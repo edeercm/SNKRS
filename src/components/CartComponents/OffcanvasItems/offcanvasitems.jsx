@@ -11,7 +11,6 @@ const OffcanvasItems = (props) => {
 
   return <>
     <section className="cart-items">
-      {/* <hr /> */}
       <div key={id}>
         <div className='d-flex text-center align-items-center justify-content-around'>
           <img src={image} alt="" className='img-fluid offcanvas-img' />

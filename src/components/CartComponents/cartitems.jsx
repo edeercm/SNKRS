@@ -7,7 +7,7 @@ const CartItems = (props) => {
 
   const { id, image, name, price, } = props.data
 
-  const { viewProductDetails, closeProductDetails, addToCart, cartItems, selectedProduct, removeToCart, updateCartItemCount } = useContext(ShopContext)
+  const {  addToCart, cartItems, removeToCart, updateCartItemCount } = useContext(ShopContext)
 
   return <>
     <section className="cart-items">
