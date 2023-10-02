@@ -1,0 +1,122 @@
+.carousel .control-dots .dot.selected {
+    color: black;
+}
+
+.carousel .control-dots .dot {
+    box-shadow: none;
+    background: black;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid black;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid black;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    color: black;
+    background-color: transparent;
+}
+
+
+.addtocart-button {
+    position: relative;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    z-index: 1;
+}
+
+.cart-btn {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    z-index: 1;
+}
+
+.shop-btn {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    z-index: 1;
+}
+
+.accordion-box {
+    margin-top: 2rem;
+    border: 1px solid #131313;
+}
+
+/* Anular el enfoque y hover en el botón del acordeón */
+.accordion-button {
+    background-color: transparent;
+    /* Hacer que el fondo sea transparente */
+    color: #131313;
+    /* Cambiar el color del texto cuando no esté en hover o enfoque */
+}
+
+/* Estilo enfoque (focus) */
+.accordion-button:focus {
+    background-color: transparent;
+    box-shadow: none;
+    /* Eliminar la sombra en enfoque */
+    color: #131313;
+    /* Otros estilos personalizados en enfoque si es necesario */
+}
+
+/* Estilo hover */
+.accordion-button:hover {
+    background-color: transparent;
+}
+
+
+.alsolike-img {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.alsolike-img:hover {
+    cursor: pointer;
+    transform: scale(1.075);
+}
+
+.alsolike-product-name {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .alsolike-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .alsolike-img {
+        width: 9rem;
+    }
+
+    .alsolike-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alsolike-product-name {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+}

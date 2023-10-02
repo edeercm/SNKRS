@@ -1,0 +1,29 @@
+.newarrivals-img {
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.newarrivals-img:hover {
+    transform: scale(1.075);
+}
+
+@media screen and (max-width: 480px) {
+
+    .newarrivals-card {
+        margin-top: 1rem;
+    }
+
+    .newarrivals-img {
+        width: 8.5rem
+    }
+
+    .newarrivals-name {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .newarrivals-price {
+        font-size: 0.875rem;
+    }
+
+}

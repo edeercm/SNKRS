@@ -1,0 +1,56 @@
+.banner {
+    background: url(/src/assets/images/banner/homebanner.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.best-sellers, 
+.apparel,
+.newarrivals,
+.shopbyicon {
+    font-weight: bold;
+}
+
+.shop-now-label {
+    font-size: 0.825rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.apparel1-img,
+.apparel2-img {
+    width: 100%;
+}
+
+.newarrival-img {
+    width: 33%;
+}
+
+.store-details {
+    background: url(/src/assets/images/store/store1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.store-name {
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.store-ubi {
+    color: white;
+    font-size: 1.875rem;
+}
+
+
+
+
+
+
+
+

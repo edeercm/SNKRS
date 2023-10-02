@@ -1,0 +1,47 @@
+footer {
+    background-color: #131313;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.footer-label-details {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+}
+
+.footer-details a, p {
+    color: white;
+    
+}
+
+.payment {
+    width: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        
+    }
+
+    .footer-label-details {
+        margin-top: 1rem;
+    }
+
+    .footer-details {
+        margin-top: 1rem;
+    }
+
+    .additional-footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

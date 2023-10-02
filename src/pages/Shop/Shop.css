@@ -1,0 +1,57 @@
+.banner-shop-details {
+  background: url(/src/assets/images/banner/shopbanner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+}
+
+.banner-shop-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.page-link {
+
+  background-color: transparent;
+  border: none;
+  color: #131313;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+  border: none;
+  color: #fff;
+}
+
+.page-link:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: #0056b3;
+  color: #fff;
+}
+
+@media screen and (max-width: 890px) {
+
+  .banner-shop-details {
+    height: 15vh;
+  }
+
+  .banner-shop-title {
+    font-size: 4rem;
+  }
+ 
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .banner-shop-details {
+    height: 10vh;
+  }
+
+  .banner-shop-title {
+    font-size: 1.75rem;
+  }
+ 
+
+}

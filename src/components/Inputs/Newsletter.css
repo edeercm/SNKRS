@@ -1,0 +1,58 @@
+.news-form-control input {
+    width: 100%;
+}
+
+.newsletter-label {
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+
+.form-check-newsletter input:focus {
+    border-color: #131313;
+}
+
+.newsletter-btn {
+    position: relative;
+    width: 7rem;
+    border: none;
+    padding: 0.25rem;
+    color: #131313;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fff;
+
+}
+
+.newsletter-btn-disabled {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 890px) {
+
+    .news-form-control input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .news-form-control input {
+        width: auto;
+    }
+
+    .labelandbutton {
+        width: 20.5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .labelandbutton {
+        width: auto;
+    }
+
+}
+
+
+  

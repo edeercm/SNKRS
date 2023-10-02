@@ -1,0 +1,105 @@
+.contact-form {
+    margin-top: 1rem;
+}
+
+.form-control,
+.form-select {
+    width: 30.5rem;
+}
+
+.form-control {
+    height: 2.275rem;
+    border-radius: 0;
+    border-color: #e8e8e1;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #131313;
+}
+
+.form-control.is-invalid:focus {
+    box-shadow: none;
+}
+
+.form-select {
+    height: 2.275rem;
+    border-radius: 0;
+    border-color: #e8e8e1;
+}
+
+.form-select:focus {
+    box-shadow: none;
+    border-color: #131313;
+}
+
+.form-select.is-invalid:focus {
+    box-shadow: none;
+}
+
+.text-area {
+    width: 100%;
+    height: 7rem;
+}
+
+.submit-contact-btn {
+    position: relative;
+    width: 10%;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #131313;
+    z-index: 1;
+}
+
+.submit-contact-btn-disabled {
+    cursor: not-allowed;
+}
+
+.contactus-modal-btn {
+    position: relative;
+    width: 4.5rem;
+    border: none;
+    padding: 0.35rem;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #131313;
+    z-index: 1;
+}
+
+@media screen and (max-width: 890px) {
+
+    .contact-form {
+        margin-top: 1rem;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+
+    .submit-contact-btn {
+        width: auto;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .contact-form {
+        margin-top: 1rem;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+
+
+    .submit-contact-btn {
+        width: auto;
+    }
+
+}

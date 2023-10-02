@@ -1,0 +1,152 @@
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.snkrsvideo {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.about-card {
+    position: absolute;
+    width: 28rem;
+    height: 10rem;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.culture,
+.model,
+.community {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.culture-card,
+.community-card {
+    position: absolute;
+    width: 32.75rem;
+    height: 10rem;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+
+.model-card {
+    position: absolute;
+    width: 32.75rem;
+    height: 10rem;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.culture-img,
+.model-img,
+.community-img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .about-card {
+        width: 36rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .culture,
+    .model,
+    .community {
+        height: 75vh;
+    }
+
+    .culture-card,
+    .model-card,
+    .community-card {
+        width: 36rem;
+        height: auto;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .culture-img,
+    .model-img,
+    .community-img {
+        height: 45vh;
+    }
+
+    .culture {
+        margin-top: 7.15rem;
+    }
+
+    .community {
+        margin-bottom: 6.75rem;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .about-card {
+        width: 18rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .culture,
+    .model,
+    .community {
+        height: 80vh;
+    }
+
+    .culture-card,
+    .model-card,
+    .community-card {
+        width: 20rem;
+        height: auto;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .culture-img,
+    .model-img,
+    .community-img {
+        height: 50vh;
+    }
+
+    .culture {
+        margin-top: 0;
+    }
+
+    .community {
+        margin-bottom: 6.75rem;
+    }
+
+}

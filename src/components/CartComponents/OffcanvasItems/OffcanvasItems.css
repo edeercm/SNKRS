@@ -1,0 +1,47 @@
+.offcanvas-img {
+    width: 35%;
+}
+
+.name-box {
+    width: 50%;
+}
+
+.offcanvas-title {
+    font-size: 1.575rem;
+    color: #131313;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvas-name {
+    font-size: 0.975rem;
+    color: #131313;
+}
+
+.btns-box {
+    height: 8rem;
+    background-color: #F8F8F8;
+}
+
+.offcanvas-btn {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    z-index: 1;
+}
+
+.continue-text {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgba(0,0,0,.5);
+}
+
+.continue-text:hover {
+    color: rgba(0,0,0,.8);
+}

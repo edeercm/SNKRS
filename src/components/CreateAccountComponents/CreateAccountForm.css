@@ -1,0 +1,74 @@
+.form-control-height {
+    height: 3rem;
+}
+
+.invalid-password-text {
+    width: 27.75rem;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input:focus {
+    border-color: #e8e8e1;
+    box-shadow: none;
+}
+
+.form-check-label {
+    width: 27.75rem;
+}
+
+.register-label-container {
+    margin-top: -0.625rem;
+}
+
+.register-label {
+    font-size: 0.815rem;
+}
+
+.register-label-underline {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.register-btn {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 25%;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    z-index: 1;
+}
+
+.register-btn-disabled {
+    cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .form-control-width {
+        width: 100%;
+    }
+
+    .form-check-label {
+        width: 100%;
+    }
+
+    .register-label-container {
+        width: 100%;
+    }
+
+    .register-btn {
+        width: 30%;
+    }
+}
+
+
+
+

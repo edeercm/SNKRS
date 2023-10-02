@@ -1,0 +1,62 @@
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-container {
+    @include make-container($padding-x: 15rem); // Ajusta el valor de $padding-x según tu preferencia
+}
+
+.contactus-banner {
+    background-image: url(/src/assets/images/contact/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+}
+
+@media screen and (max-width: 890px) {
+
+    @mixin make-container($padding-x: $container-padding-x) {
+        width: 100%;
+        padding-right: $padding-x;
+        padding-left: $padding-x;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .custom-container {
+        @include make-container($padding-x: 5rem); // Ajusta el valor de $padding-x según tu preferencia
+    
+    }
+
+    .contactus-banner {
+        height: 15vh;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    @mixin make-container($padding-x: $container-padding-x) {
+        width: 100%;
+        padding-right: $padding-x;
+        padding-left: $padding-x;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .custom-container {
+        @include make-container($padding-x: 0.85rem); // Ajusta el valor de $padding-x según tu preferencia
+    
+    }
+
+    .contactus-banner {
+        height: 10vh;
+    }
+
+
+}

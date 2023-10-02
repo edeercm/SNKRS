@@ -1,0 +1,81 @@
+.snkrs-card {
+    height: 47.5vh;
+}
+
+.sellproducts-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
+.sellproducts-img:hover {
+    transform: scale(1.075);
+}
+
+.sellproducts-img:hover .details-button {
+    display: block;
+}
+
+/* Estilo del botón "DETAILS" por defecto (no visible) */
+.details-button {
+    display: none;
+    position: relative;
+    width: 85%;
+    text-align: center;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    z-index: 1;
+}
+
+.details-button.visible {
+    display: block;
+}
+
+.shop-products-name {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 890px) {
+
+    .snkrs-card {
+        height: 30vh;
+    }
+
+    .details-button {
+        display: block;
+        padding: 0.0005rem;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .snkrs-card {
+        width: 50%;
+        height: 35vh;
+    }
+
+    /* .sellproducts-img {
+        width: 100%;
+     
+    } */
+
+    .details-button {
+        display: block;
+        width: 90%;
+    }
+
+    .shop-products-name {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .shop-products-price {
+        font-size: 0.875rem;
+    }
+
+}
