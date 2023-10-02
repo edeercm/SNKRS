@@ -13,7 +13,6 @@ import CreateAccount from './pages/CreateAccount/createaccount'
 import Cart from './pages/Cart/cart'
 import Details from './pages/Details/details'
 
-
 function App() {
   return <>
   <ShopContext>
