@@ -36,6 +36,10 @@ header {
     color: #131313;
 }
 
+.form-search-control {
+    width: 30rem;
+}
+
 .navbar-toggle {
     display: none;
 }
@@ -72,6 +76,10 @@ header {
         width: 125px;
     }
 
+    .form-search-control {
+        width: 20rem;
+    }
+
     .navbar-toggle {
         cursor: pointer;
         font-size: 1rem;
@@ -89,6 +97,5 @@ header {
     .navbar-toggle {
         display: block;
     }
-   
 
 }
