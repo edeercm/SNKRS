@@ -9,7 +9,10 @@ const createaccount = () => {
       <div className="container-xxl">
         <div className="d-flex flex-column align-items-center">
           <div className='text-start'>
-            <h3 className='welcome-to'>Looks like you’re new here.<br></br>We need some info.</h3>
+            <h3 className='fw-bold'>Looks like you’re new here.<br></br>We need some info.</h3>
+            <div className='action-label mt-3'>
+              {/* <span>Ready to get started? Just a few details to go.</span> */}
+            </div>
             <div className='mt-4'>
               <CreateAccountForm />
             </div>

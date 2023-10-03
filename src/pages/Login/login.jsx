@@ -11,7 +11,7 @@ const login = () => {
           <div className='text-start'>
             <h3 className='fw-bold'>Welcome to Snkrs</h3>
             <div className='action-label mt-3'>
-              <span>Good to see you! Type in your email, and let's get started.</span>
+              {/* <span>Good to see you! Type in your email, and let's get started.</span> */}
             </div>
             <div className='mt-4'>
               <LoginForm />

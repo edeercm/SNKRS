@@ -109,7 +109,7 @@ function CreateAccountForm() {
           />
           {errors.confirmPassword && <div className="invalid-feedback">{errors.confirmPassword.message}</div>}
         </div>
-        <div className="form-check d-flex align-items-center mt-3 mb-3">
+        <div className="form-check d-flex align-items-center justify-content-center mt-3 mb-3">
           <input
             type="checkbox"
             id="newsletter"

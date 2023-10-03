@@ -7,7 +7,7 @@
 }
 
 .form-check input {
-    margin-left: -1.5rem;
+    margin-left: -3.75rem;
     width: auto;
 }
 
@@ -19,10 +19,6 @@
     border-color: #e8e8e1;
     box-shadow: none;
 }
-
-/* .form-check-label {
-    width: 27.75rem;
-} */
 
 .register-label-container {
     margin-top: -0.625rem;
@@ -60,17 +56,27 @@
         width: 20rem;
     }
 
-    /* .form-check-label {
-        width: 100%;
-    } */
+    .invalid-password-text {
+        width: 20rem;
+    }
 
-    /* .register-label-container {
-        width: 100%;
-    } */
+    .form-check {
+        width: 20rem;
+    }
 
-    /* .register-btn {
-        width: 30%;
-    } */
+    .form-check input {
+        margin-left: -1.5rem;
+        width: auto;
+    }
+
+    .form-check label {
+        margin-top: 1.5rem;
+    }
+
+    .register-label-container {
+        width: 20rem;
+    }
+
 }
 
 
