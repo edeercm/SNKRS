@@ -48,7 +48,7 @@
 
 .shopnow-btn {
     position: relative;
-    width: auto;
+    width: 6.5rem;
     text-align: center;
     background-color: #131313;
     border: none;
@@ -87,10 +87,6 @@
         height: auto;
         margin-top: 3rem;
         margin-bottom: 3rem;
-    }
-
-    .shopnow-btn {
-        width: auto;
     }
 
     .label-info {

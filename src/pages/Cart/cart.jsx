@@ -48,7 +48,29 @@ const Cart = () => {
                 <span className=''>(Duties & taxes included)</span>
               </div>
             </div>
-            <button className='checkout-btn mt-4 mb-2'>CHECKOUT</button>
+            <button
+              className='checkout-btn mt-4 mb-2'
+              data-bs-toggle="modal"
+              data-bs-target="#checkoutModal"
+            >
+              CHECKOUT
+            </button>
+            <div className="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Upps :|</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>It looks like our service is taking a short breather to recharge. We'll be back in the blink of an eye. Thanks for your patience.</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="modal-btn" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className='d-flex gap-2'>
               <Link to={'/shop'} className='continue-btn mb-5'>Continue Shopping</Link>
               <Link
