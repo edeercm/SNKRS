@@ -44,9 +44,6 @@ header {
     display: block;
 }
 
-/* .offcanvas.offcanvas-top {
-    height: 25vh;
-} */
 
 .offcanvas-menu a {
     padding: 0.75rem;
@@ -68,14 +65,6 @@ header {
     text-decoration: underline;
     text-underline-position: under;
 }
-
-@media screen and (max-width: 890px) {
-
-    .offcanvas.offcanvas-top {
-        height: 20vh;
-    }
-}
-
 
 @media screen and (max-width: 768px) {
 

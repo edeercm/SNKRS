@@ -11,7 +11,7 @@ function CreateAccountForm() {
   const onSubmit = (data) => {
     if (isValid) {
       // Realiza acciones adicionales aquí, como enviar la solicitud de restablecimiento de contraseña con los datos del formulario
-      console.log(data);
+      // console.log(data);
       reset(); // Limpia el formulario después de enviar
     }
   };

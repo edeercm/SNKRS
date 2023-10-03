@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useRef } from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
 import { RiSearchLine } from 'react-icons/ri'
 import { PiUserBold } from 'react-icons/pi'
@@ -12,12 +12,22 @@ import '../Header/Header.css'
 
 const Header = () => {
 
-
-
   const { getTotalCartProducts } = useContext(ShopContext)
   const totalProducts = getTotalCartProducts()
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const offcanvasRef = useRef(null);
+
+  const closeOffcanvas = () => {
+    if (offcanvasRef.current) {
+      offcanvasRef.current.classList.remove('show'); // Cierra el offcanvas
+    }
+  };
+
+
+
+
 
   return <>
     <div className="announcement d-flex align-items-center justify-content-center">
@@ -41,7 +51,7 @@ const Header = () => {
             >
               <RiSearchLine className='text-dark fs-4' />
             </Link>
-            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div className="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" >
               <div className="offcanvas-header">
                 <div></div>
                 <Link to='/'><img src={logo} alt="" className='img-fluid logo' /></Link>
@@ -82,18 +92,17 @@ const Header = () => {
         >
           <HiBars3BottomRight className={`icon ${isOpen ? 'active' : ''}`} />
         </div>
-        <div className="offcanvas offcanvas-end" tabindex="-1" id="newOffcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas offcanvas-end" tabindex="-1" id="newOffcanvasRight" aria-labelledby="offcanvasRightLabel" ref={offcanvasRef}>
           <div className="offcanvas-header">
-            {/* <h5 className="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> */}
             <div></div>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body d-flex flex-column align-items-center justify-content-center">
             <div className='offcanvas-menu d-flex flex-column text-center'>
-              <Link to={'/'}>Home</Link>
-              <Link to={'shop'}>Shop</Link>
-              <Link to={'about'}>About</Link>
-              <Link to={'contact'}>Contact</Link>
+              <Link to={'/'} onClick={closeOffcanvas}>Home</Link>
+              <Link to={'shop'} onClick={closeOffcanvas}>Shop</Link>
+              <Link to={'about'} onClick={closeOffcanvas}>About</Link>
+              <Link to={'contact'} onClick={closeOffcanvas}>Contact</Link>
             </div>
             <div className="offcanvas-social-icons d-flex  justify-content-center">
               <Link to={'https://www.linkedin.com/in/edeercm/'} target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></Link>
