@@ -19,12 +19,6 @@ const Header = () => {
 
   const offcanvasRef = useRef(null);
 
-  // const closeOffcanvas = () => {
-  //   if (offcanvasRef.current) {
-  //     offcanvasRef.current.classList.remove('show'); // Cierra el offcanvas
-  //   }
-  // };
-
   const closeOffcanvas = () => {
     if (offcanvasRef.current) {
       offcanvasRef.current.classList.remove('show'); // Quita la clase 'show' para cerrar el offcanvas
@@ -35,11 +29,6 @@ const Header = () => {
     }
   };
   
-
-
-
-
-
   return <>
     <div className="announcement d-flex align-items-center justify-content-center">
       <span className='free-label'>¡Free Shipping on all orders!</span>
