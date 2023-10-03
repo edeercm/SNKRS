@@ -2,39 +2,8 @@
     margin-top: 1rem;
 }
 
-.form-control,
-.form-select {
-    width: 30.5rem;
-}
-
-.form-control {
-    height: 2.275rem;
-    border-radius: 0;
-    border-color: #e8e8e1;
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border-color: #131313;
-}
-
-.form-control.is-invalid:focus {
-    box-shadow: none;
-}
-
-.form-select {
-    height: 2.275rem;
-    border-radius: 0;
-    border-color: #e8e8e1;
-}
-
-.form-select:focus {
-    box-shadow: none;
-    border-color: #131313;
-}
-
-.form-select.is-invalid:focus {
-    box-shadow: none;
+.contactus-form input {
+    width: auto;
 }
 
 .text-area {

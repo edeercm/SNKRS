@@ -24,8 +24,7 @@ function ContactForm() {
   };
 
   return (
-    <div className='contact-form'>
-      {/* <span className='fs-3 fw-bold'>Contact Us</span> */}
+    <div className='contactus-form'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className={window.innerWidth <= 890 ? 'd-flex flex-column' : 'd-flex flex-row justify-content-between'}>
           <div className="mb-3">

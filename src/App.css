@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* MODALS */
+/* Modals Style */
 
 .modal-content {
   border: 0;
@@ -64,6 +64,37 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+
+/* Inputs Style */
+
+.form-control {
+  height: 3rem;
+  border-radius: 0;
+  border-color: #e8e8e1;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #131313;
+}
+
+.form-control.is-invalid:focus {
+  box-shadow: none;
+}
+
+.form-select {
+  border-radius: 0;
+  border-color: #e8e8e1;
+}
+
+.form-select:focus {
+  box-shadow: none;
+  border-color: #131313;
+}
+
+.form-select.is-invalid:focus {
+  box-shadow: none;
+}
 
 
 

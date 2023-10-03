@@ -19,17 +19,16 @@ function ResetPassForm() {
   };
 
   return (
-    <div>
+    <div className='forgotpass-form'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
-          {/* <label htmlFor="email" className="form-label">Email</label> */}
           <input
             type="email"
             id="email"
             placeholder='Email Addres'
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             onBlur={() => handleBlur("email")} // Llamar a la función handleBlur cuando el usuario abandona el campo
-            className={`form-control login-form-control ${errors.email ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.email ? 'is-invalid' : ''}`}
           />
           {errors.email && <div className="invalid-feedback">Please enter a valid email address</div>}
         </div>

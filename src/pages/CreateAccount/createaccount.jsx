@@ -4,10 +4,9 @@ import CreateAccountForm from '../../components/CreateAccountComponents/createac
 import '../CreateAccount/CreateAccount.css'
 
 const createaccount = () => {
-  return <> 
-  <section className='loginform mt-5 mb-5'>
-    <div className="container-xxl">
-      {/* <div className=""> */}
+  return <>
+    <section className='loginform mt-5 mb-5'>
+      <div className="container-xxl">
         <div className="d-flex flex-column align-items-center">
           <div className='text-start'>
             <h3 className='welcome-to'>Looks like you’re new here.<br></br>We need some info.</h3>
@@ -19,9 +18,8 @@ const createaccount = () => {
             </div>
           </div>
         </div>
-      {/* </div> */}
-    </div>
-  </section>
+      </div>
+    </section>
   </>
 }
 

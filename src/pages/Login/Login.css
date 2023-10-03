@@ -1,8 +1,12 @@
-.welcome-to {
-    font-weight: 600;
-}
-
-.forgot-password, 
+.forgot-password,
 .create-account {
    font-size: 0.915rem;
+}
+
+@media screen and (max-width: 480px) {
+
+   .loginform {
+      width: 100%;
+   }
+   
 }

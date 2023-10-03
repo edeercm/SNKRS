@@ -41,7 +41,7 @@ function CreateAccountForm() {
   const password = watch("password", ""); // Obtener el valor del campo de contraseña
 
   return (
-    <div>
+    <div className='creaateaccount'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
           <input
@@ -50,19 +50,18 @@ function CreateAccountForm() {
             placeholder='First Name'
             {...register("firstName", { required: true })}
             onBlur={() => handleBlur("firstName")}
-            className={`form-control form-control-width form-control-height ${errors.firstName ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.firstName ? 'is-invalid' : ''}`}
           />
           {errors.firstName && <div className="invalid-feedback">Please enter first name</div>}
         </div>
         <div className="mb-3">
-          {/* <label htmlFor="lastName" className="form-label">Last Name</label> */}
           <input
             type="text"
             id="lastName"
             placeholder='Last Name'
             {...register("lastName", { required: true })}
             onBlur={() => handleBlur("lastName")}
-            className={`form-control form-control-width form-control-height ${errors.lastName ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.lastName ? 'is-invalid' : ''}`}
           />
           {errors.lastName && <div className="invalid-feedback">Please enter last name</div>}
         </div>
@@ -73,7 +72,7 @@ function CreateAccountForm() {
             placeholder='Email Address'
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             onBlur={() => handleBlur("email")}
-            className={`form-control form-control-width form-control-height ${errors.email ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.email ? 'is-invalid' : ''}`}
           />
           {errors.email && <div className="invalid-feedback">Please enter email address</div>}
         </div>
@@ -91,7 +90,7 @@ function CreateAccountForm() {
               // Agregar esta función para mostrar el mensaje al escribir
               trigger("password");
             }}
-            className={`form-control form-control-width form-control-height ${errors.password ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.password ? 'is-invalid' : ''}`}
           />
           {password.length === 0 && <div className="invalid-feedback">Please enter password</div>}
           {password.length > 0 && <div className="invalid-feedback invalid-password-text">{errors.password ? errors.password.message : ''}</div>}
@@ -106,21 +105,18 @@ function CreateAccountForm() {
               validate: (value) => value === getValues("password") || "Passwords do not match",
             })}
             onBlur={() => handleBlur("confirmPassword")}
-            className={`form-control form-control-width form-control-height ${errors.confirmPassword ? 'is-invalid' : ''}`}
+            className={`form-control ${errors.confirmPassword ? 'is-invalid' : ''}`}
           />
           {errors.confirmPassword && <div className="invalid-feedback">{errors.confirmPassword.message}</div>}
         </div>
-        <div className="mt-3 mb-3 form-check">
+        <div className="form-check d-flex align-items-center mt-3 mb-3">
           <input
             type="checkbox"
             id="newsletter"
-            {...register("newsletter")}
-            className="form-check-input"
+            {...register("newsletter")}          
             defaultChecked
           />
-          <label htmlFor="newsletter" className="form-check-label">
-            Be the first to hear about new releases, special offers and more.
-          </label>
+          <label className='mx-1' htmlFor="newsletter">Be the first to hear about new releases, special offers and more.</label>
         </div>
         <div className='register-label-container'>
           <span className='register-label'>By clicking "Register", you agree to our
@@ -142,7 +138,6 @@ function CreateAccountForm() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                {/* <h5 className="modal-title" id="exampleModalLabel">Welcome to our family</h5> */}
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">

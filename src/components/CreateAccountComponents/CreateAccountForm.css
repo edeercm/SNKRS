@@ -1,9 +1,14 @@
-.form-control-height {
-    height: 3rem;
+.creaateaccount input {
+    width: 30rem;
 }
 
 .invalid-password-text {
-    width: 27.75rem;
+    width: 27rem;
+}
+
+.form-check input {
+    margin-left: -1.5rem;
+    width: auto;
 }
 
 .form-check-input[type=checkbox] {
@@ -15,9 +20,9 @@
     box-shadow: none;
 }
 
-.form-check-label {
+/* .form-check-label {
     width: 27.75rem;
-}
+} */
 
 .register-label-container {
     margin-top: -0.625rem;
@@ -36,13 +41,12 @@
     position: relative;
     font-weight: bold;
     text-transform: uppercase;
-    width: 25%;
+    width: 6.5rem;
     text-align: center;
     background-color: #131313;
     border: none;
     color: #fff;
     padding: 10px;
-    z-index: 1;
 }
 
 .register-btn-disabled {
@@ -52,21 +56,21 @@
 
 @media screen and (max-width: 480px) {
 
-    .form-control-width {
-        width: 100%;
+    .creaateaccount input {
+        width: 20rem;
     }
 
-    .form-check-label {
+    /* .form-check-label {
         width: 100%;
-    }
+    } */
 
-    .register-label-container {
+    /* .register-label-container {
         width: 100%;
-    }
+    } */
 
-    .register-btn {
+    /* .register-btn {
         width: 30%;
-    }
+    } */
 }
 
 

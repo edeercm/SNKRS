@@ -3,14 +3,8 @@ import { useForm } from 'react-hook-form';
 import '../LoginComponents/LoginForm.css'
 
 function LoginForm() {
-  // const { handleSubmit, register, formState: { errors }, trigger } = useForm();
 
   const { handleSubmit, register, formState: { errors, isDirty, isValid }, trigger, reset } = useForm();
-
-  // const onSubmit = (data) => {
-  //   // Aquí puedes manejar la lógica de inicio de sesión con los datos del formulario
-  //   console.log(data);
-  // };
 
   const onSubmit = (data) => {
     if (isValid) {
@@ -25,7 +19,7 @@ function LoginForm() {
   };
 
   return (
-    <div>
+    <div className='login-form'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
           <input
@@ -34,7 +28,7 @@ function LoginForm() {
             placeholder='Email Addres'
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             onBlur={() => handleBlur("email")} // Llamar a la función handleBlur cuando el usuario abandona el campo
-            className={`form-control login-form-control ${errors.email ? 'is-invalid' : ''}`}
+            className={`form-control  ${errors.email ? 'is-invalid' : ''}`}
           />
           {errors.email && <div className="invalid-feedback">Please enter a valid email address</div>}
         </div>
@@ -45,7 +39,7 @@ function LoginForm() {
             placeholder='Password'
             {...register("password", { required: true })}
             onBlur={() => handleBlur("password")} // Llamar a la función handleBlur cuando el usuario abandona el campo
-            className={`form-control login-form-control ${errors.password ? 'is-invalid' : ''}`}
+            className={`form-control  ${errors.password ? 'is-invalid' : ''}`}
           />
           {errors.password && <div className="invalid-feedback">Please enter your password</div>}
         </div>

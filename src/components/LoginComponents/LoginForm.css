@@ -1,11 +1,11 @@
-.login-form-control {
-    width: 27.75rem;
-    height: 3rem;
+.login-form input {
+    width: 30rem;
+    /* height: 3rem; */
 }
 
 .login-btn {
     position: relative;
-    width: 25%;
+    width: 6.5rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -13,7 +13,6 @@
     border: none;
     color: #fff;
     padding: 10px;
-    z-index: 1;
 }
 
 .login-btn-disabled {
@@ -22,13 +21,9 @@
 
 @media screen and (max-width: 480px) {
 
-    .login-form-control {
-        width: 20.5rem;
-
+    .login-form input {
+        width: 100%;
+        /* height: 3rem; */
     }
-
-    .login-btn {
-        width: auto;
-    }
-
+    
 }
