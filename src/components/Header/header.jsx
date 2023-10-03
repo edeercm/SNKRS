@@ -19,11 +19,22 @@ const Header = () => {
 
   const offcanvasRef = useRef(null);
 
+  // const closeOffcanvas = () => {
+  //   if (offcanvasRef.current) {
+  //     offcanvasRef.current.classList.remove('show'); // Cierra el offcanvas
+  //   }
+  // };
+
   const closeOffcanvas = () => {
     if (offcanvasRef.current) {
-      offcanvasRef.current.classList.remove('show'); // Cierra el offcanvas
+      offcanvasRef.current.classList.remove('show'); // Quita la clase 'show' para cerrar el offcanvas
+      const backdrop = document.querySelector('.offcanvas-backdrop'); // Reemplaza '.offcanvas-backdrop' con la clase correcta
+      if (backdrop) {
+        backdrop.remove(); // Elimina el fondo oscuro
+      }
     }
   };
+  
 
 
 
