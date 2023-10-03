@@ -3,8 +3,14 @@
 }
 
 .contactus-form input {
-    width: auto;
+    width: 31.75rem;
 }
+
+.contactus-form .form-select {
+    width: 31.75rem;
+    height: 3rem;
+}
+
 
 .text-area {
     width: 100%;
@@ -13,12 +19,11 @@
 
 .submit-contact-btn {
     position: relative;
-    width: 10%;
+    width: 6.5rem;
     border: none;
     color: #fff;
     padding: 10px;
     background-color: #131313;
-    z-index: 1;
 }
 
 .submit-contact-btn-disabled {
@@ -35,40 +40,36 @@
     text-align: center;
     text-transform: uppercase;
     background-color: #131313;
-    z-index: 1;
 }
 
 @media screen and (max-width: 890px) {
 
-    .contact-form {
+    .contactus-form {
         margin-top: 1rem;
     }
 
-    .contact-form input {
+    .contactus-form input {
         width: 100%;
     }
 
-    .submit-contact-btn {
-        width: auto;
+    .contactus-form .form-select {
+        width: 100%;
     }
 
 }
 
-
-
 @media screen and (max-width: 480px) {
 
-    .contact-form {
+    .contactus-form {
         margin-top: 1rem;
     }
 
-    .contact-form input {
+    .contactus-form input {
         width: 100%;
     }
 
-
-    .submit-contact-btn {
-        width: auto;
+    .contactus-form .form-select {
+        width: 100%;
     }
 
 }

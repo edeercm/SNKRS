@@ -6,15 +6,16 @@ import '../../pages/Contact/Contact.scss'
 
 const contact = () => {
   return <>
-    <div className="contactus-banner">
-    </div>
+    <div className="contactus-banner"></div>
     <div className="custom-container d-flex flex-column mt-5">
-      <div className='d-flex flex-column '>
-        <span className='fw-bold fs-4'>Contact Us</span>
-        <span className='mt-2'>For any questions you may have, our Customer Service team is ready to assist you during business hours Monday to Friday from 9am-6pm EST. </span>
-      </div>
-      <section className='contactus-form'>
-        <ContactForm />
+      <section>
+        <div className='d-flex flex-column '>
+          <h3 className='fw-bold'>Contact Us</h3>
+          <span className='mt-2'>For any questions you may have, our Customer Service team is ready to assist you during business hours Monday to Friday from 9am-6pm EST. </span>
+        </div>
+        <div className='contactus-form'>
+          <ContactForm />
+        </div>
       </section>
       <hr />
       <section className='information'>
