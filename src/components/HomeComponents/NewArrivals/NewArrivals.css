@@ -1,12 +1,3 @@
-.newarrivals-img {
-    width: 100%;
-    transition: .3s ease-in-out;
-}
-
-.newarrivals-img:hover {
-    transform: scale(1.075);
-}
-
 @media screen and (max-width: 480px) {
 
     .newarrivals-card {

@@ -1,21 +1,28 @@
 import React from 'react'
+import styled from 'styled-components'
 import { NewArrivals } from '../../products'
-import './NewArrivals.css'
+
+const Img = styled.img`
+  width: 100%;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.075);
+  }
+`
 
 const newArrivals = () => {
   return <>
-    <div className="container-xxl">
-      <div className="row newarrivals-card mt-2">
-        {NewArrivals.map(product => (
-          <div className="col" key={product.id}>
-            <img src={product.image} alt="" className='newarrivals-img' />
-            <div className="newarrivals-card-details d-flex flex-column mt-2">
-              <span className='product-name newarrivals-name'>{product.name}</span>
-              <span className='product-price newarrivals-price'>${product.price}</span>
-            </div>
+    <div className="row">
+      {NewArrivals.map(product => (
+        <div className="col-3" key={product.id}>
+          <Img src={product.image} alt="Product" />
+          <div className="d-flex flex-column text-center mt-2">
+            <span>{product.name}</span>
+            <span>${product.price}</span>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   </>
 }
