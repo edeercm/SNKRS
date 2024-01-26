@@ -5,8 +5,6 @@ import BestSellers from '../../components/HomeComponents/BestSellers/bestSellers
 import NewArrivals from '../../components/HomeComponents/NewArrivals/newArrivals'
 import ShopByIcon from '../../components/HomeComponents/ShopByIcon/shopByIcon'
 import ShopByIcon2 from '../../components/HomeComponents/ShopByIcon/shopByIcon2'
-import apparel1 from '../../assets/images/apparel/apparel1.jpg'
-import apparel2 from '../../assets/images/apparel/apparel2.jpg'
 
 
 const BannerIntro = styled.div`

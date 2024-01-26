@@ -10,8 +10,7 @@
   font-weight: bold;
 }
 
-.page-link {
-
+/* .page-link {
   background-color: transparent;
   border: none;
   color: #131313;
@@ -28,7 +27,7 @@
   outline: none;
   background-color: #0056b3;
   color: #fff;
-}
+} */
 
 @media screen and (max-width: 890px) {
 

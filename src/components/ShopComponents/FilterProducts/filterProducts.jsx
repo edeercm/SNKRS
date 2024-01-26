@@ -19,7 +19,6 @@ export default function SelectSmall({ onChange }) {
       <Select
         labelId="demo-select-small-label"
         id="demo-select-small"
-        // value={age}
         label="Sort by"
         onChange={handleChange}
       >

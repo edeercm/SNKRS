@@ -27,7 +27,7 @@ const shopItems = ({ sortBy }) => {
   }, [sortBy]);
 
   return <>
-    <div className="col d-flex flex-wrap">
+    <div className="row">
       {sortedProducts.map((product) => (
         <ShopProducts key={product.id} data={product} />
       ))}

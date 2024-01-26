@@ -1,10 +1,26 @@
 import React, { useState } from 'react'
-import '../Shop/Shop.css'
+import styled from 'styled-components'
 import ShopItems from '../../components/ShopComponents/shopItems'
 import SelectSmall from '../../components/ShopComponents/FilterProducts/filterProducts'
-import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
-import { Link } from 'react-router-dom';
+import '../Shop/Shop.css'
+
+const BannerIntro = styled.div`
+  background: url(/src/assets/images/banner/shopbanner.jpg);
+  min-height: 25vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const Label = styled.h1`
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+`
 
 const shop = () => {
 
@@ -15,30 +31,36 @@ const shop = () => {
   };
 
   return <>
-    <section className='banner-shop'>
-      <div className="container-fluid">
+    <section>
+      <BannerIntro >
+        <Label>運動鞋</Label>
+      </BannerIntro>
+    </section>
+    <section>
+      <div className="container-xxl">
         <div className="row">
-          <div className="banner-shop-details d-flex flex-column align-items-center justify-content-center">
-            <h2 className='banner-shop-title text-white'>運動鞋</h2>
+          <div className="col-12">
+            <div className="d-flex justify-content-between mt-5 mb-4">
+              <span className='fs-3 fw-bold'>Sneakers</span>
+              <SelectSmall onChange={handleChange} />
+            </div>
+            <hr />
           </div>
         </div>
       </div>
     </section>
-    <section className="shop-products ">
+    <section>
       <div className="container-xxl">
-        <div className="d-flex align-items-center justify-content-between mt-5 mb-4">
-          <span className='fs-3 fw-bold'>Sneakers</span>
-          <SelectSmall onChange={handleChange} />
-        </div>
-        <hr />
         <ShopItems sortBy={sortBy} />
       </div>
     </section>
-    <div className="section-pagination">
-      <div className="d-flex justify-content-center mt-5 mb-5">
-        <a href="#"><Pagination count={10} shape="rounded" /></a>
+    <section>
+      <div className="container-xxl">
+        <div className="d-flex justify-content-center mt-5 mb-5">
+          <a href="#"><Pagination count={10} shape="rounded" /></a>
+        </div>
       </div>
-    </div>
+    </section>
   </>
 }
 
