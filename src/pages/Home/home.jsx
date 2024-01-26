@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import BestSellers from '../../components/HomeComponents/BestSellers/bestSellers'
-import NewArrivals from '../../components/HomeComponents/NewArrivals/newArrivals'
-import ShopByIcon from '../../components/HomeComponents/ShopByIcon/shopByIcon'
-import ShopByIcon2 from '../../components/HomeComponents/ShopByIcon/shopByIcon2'
+
+
+import HomeSecOne from './HomeSecOne'
+import HomeSecTwo from './HomeSecTwo'
+import HomeSecThree from './HomeSecThree'
+import HomeSecFour from './HomeSecFour'
+import HomeSecFive from './HomeSecFive'
 
 
 const BannerIntro = styled.div`
@@ -48,66 +50,11 @@ const LabelTwo = styled.span`
 
 const Home = () => {
   return <>
-    <section className='secone-intro'>
-      <BannerIntro></BannerIntro>
-    </section>
-    <section className='sectwo-bestsellers mt-4'>
-      <div className="container-xxl">
-        <div className="row">
-          <div className="col-lg-12 col-xl-12">
-            <div className='d-flex justify-content-between mt-5'>
-              <h4 className='text-uppercase fw-bold'>Best sellers</h4>
-              <Link to={'/shop'}>
-                <Label>Shop All Now</Label>
-              </Link>
-            </div>
-          </div>
-          <div className="col-lg-12 col-xl-12">
-            <BestSellers />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className='secthree-shopbyicon mt-5'>
-      <div className="container-xxl">
-        <div className="row">
-          <div className='col-12'>
-            <h4 className='text-uppercase fw-bold mt-5'>Shop by icon</h4>
-          </div>
-          <div className="col-12">
-            <ShopByIcon />
-          </div>
-          <div className="col-12">
-            <ShopByIcon2 />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className='secfour-newarrivals mt-5'>
-      <div className="container-xxl">
-        <div className="row">
-          <div className="col-12">
-            <div className='d-flex justify-content-between mt-5'>
-              <h4 className='text-uppercase fw-bold'>NEW ARRIVALS</h4>
-              <Link to={'/shop'}>
-                <Label>Shop All Now</Label>
-              </Link>
-            </div>
-          </div>
-          <div className="col-12">
-            <NewArrivals />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className='secfive-outro mt-5'>
-      <BannerOutro>
-        <div className='d-flex flex-column text-center'>
-          <Name>snkrs</Name>
-          <LabelTwo>Bugis Junction, Singapore</LabelTwo>
-        </div>
-      </BannerOutro>
-    </section>
+    <HomeSecOne />
+    <HomeSecTwo />
+    <HomeSecThree />
+    <HomeSecFour />
+    <HomeSecFive />
   </>
 }
 
