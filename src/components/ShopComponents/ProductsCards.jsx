@@ -1,7 +1,8 @@
-import React, { useContext, useState } from 'react'
-import styled from 'styled-components'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../shopcontext'
+import styled from 'styled-components'
+
 import '../ShopComponents/ShopProducts.css'
 
 const Container = styled.div`
@@ -42,7 +43,7 @@ const Img = styled.img`
 
 `
 
-const shopProducts = (props) => {
+const ProductsCards = (props) => {
 
   const { id, image, name, price } = props.data
   const { viewProductDetails } = useContext(ShopContext)
@@ -69,4 +70,4 @@ const shopProducts = (props) => {
   </>
 }
 
-export default shopProducts
+export default ProductsCards
