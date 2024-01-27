@@ -2,11 +2,11 @@ import React from 'react'
 import ContactSecOne from './ContactSecOne'
 import ContactSecTwo from './ContactSecTwo'
 
-const Contancto = () => {
+const Contact = () => {
   return <>
     <ContactSecOne />
     <ContactSecTwo />
   </>
 }
 
-export default Contancto
+export default Contact
