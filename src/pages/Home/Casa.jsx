@@ -5,7 +5,7 @@ import HomeSecThree from './HomeSecThree'
 import HomeSecFour from './HomeSecFour'
 import HomeSecFive from './HomeSecFive'
 
-const Home = () => {
+const Casa = () => {
   return <>
     <HomeSecOne />
     <HomeSecTwo />
@@ -15,4 +15,4 @@ const Home = () => {
   </>
 }
 
-export default Home
+export default Casa
