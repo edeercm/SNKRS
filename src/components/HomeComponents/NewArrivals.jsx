@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BestSellers } from '../../products'
+import { NewArrivals } from '../ProductsImages/NewArrivalsImgs'
 
 const Img = styled.img`
   width: 100%;
@@ -11,11 +11,11 @@ const Img = styled.img`
   }
 `
 
-const bestSellers = () => {
+const newArrivals = () => {
   return <>
     <div className="row">
-      {BestSellers.map(product => (
-        <div className="col-3" key={product.id}>
+      {NewArrivals.map(product => (
+        <div className="col-6 col-md-3 col-lg-3 col-xl-3" key={product.id}>
           <Img src={product.image} alt="Product" />
           <div className="d-flex flex-column text-center mt-2">
             <span>{product.name}</span>
@@ -27,4 +27,4 @@ const bestSellers = () => {
   </>
 }
 
-export default bestSellers
+export default newArrivals

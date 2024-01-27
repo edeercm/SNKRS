@@ -5,9 +5,17 @@ import { PiPlugsConnected } from 'react-icons/pi'
 import snkrsvideo from '../../assets/videos/snkrsvideo.mp4'
 
 const Container = styled.div`
+  position: relative;
   width: 100%;
   height: 60vh;
-  position: relative;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: 45vh;
+  }
+
+  @media (max-width: 575.97px) {
+    height: 100vh;
+  }
 `
 const Video = styled.video`
   width: 100%;
@@ -23,6 +31,22 @@ const Card = styled.div`
   left: 25%;
   transform: translate(-50%, -50%);
   background-color: #fff;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 30rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 575.97px) {
+    width: 20rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `
 
 const AboutSecOne = () => {

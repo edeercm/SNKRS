@@ -12,6 +12,22 @@ const Card = styled.div`
   left: 25%;
   transform: translate(-50%, -50%);
   background-color: #fff;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 32.5rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 575.97px) {
+    width: 20rem;
+    height: auto;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `
 
 const AboutSecFour = () => {

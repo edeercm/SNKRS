@@ -17,18 +17,6 @@
     height: 7rem;
 }
 
-.submit-contact-btn {
-    position: relative;
-    width: 6.5rem;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    background-color: #131313;
-}
-
-.submit-contact-btn-disabled {
-    cursor: not-allowed;
-}
 
 .contactus-modal-btn {
     position: relative;
@@ -42,34 +30,3 @@
     background-color: #131313;
 }
 
-@media screen and (max-width: 890px) {
-
-    .contactus-form {
-        margin-top: 1rem;
-    }
-
-    .contactus-form input {
-        width: 100%;
-    }
-
-    .contactus-form .form-select {
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-
-    .contactus-form {
-        margin-top: 1rem;
-    }
-
-    .contactus-form input {
-        width: 100%;
-    }
-
-    .contactus-form .form-select {
-        width: 100%;
-    }
-
-}

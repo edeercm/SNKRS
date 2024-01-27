@@ -6,6 +6,16 @@ export const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 575.97px) {
+    height: auto;
+    padding: 5rem 0 10rem;
+  }
 `
 export const Img = styled.img`
   width: 100%;

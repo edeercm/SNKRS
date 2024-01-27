@@ -2,27 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Banner = styled.div`
-  background: url(/src/assets/images/banner/homebanner.jpg);
-  height: 70vh;
+  height: 25vh;
+  background-image: url(/src/assets/images/contact/contactus.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    height: 50vh;
+
   }
 
   @media (max-width: 575.97px) {
-    height: 57.5vh;
+    height: 20vh;
   }
 `
 
-const HomeSecOne = () => {
+const ContactSecOne = () => {
   return <>
-    <section>
+      <section>
       <Banner></Banner>
     </section>
+
   </>
 }
 
-export default HomeSecOne
+export default ContactSecOne

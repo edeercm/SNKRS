@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import BestSellers from '../../components/HomeComponents/BestSellers/bestSellers'
+import BestSellers from '../../components/HomeComponents/BestSellers'
 
 const Label = styled.span`
   text-transform: uppercase;
@@ -24,7 +24,7 @@ const HomeSecTwo = () => {
               </Link>
             </div>
           </div>
-          <div className="col-lg-12 col-xl-12">
+          <div className="col-12">
             <BestSellers />
           </div>
         </div>

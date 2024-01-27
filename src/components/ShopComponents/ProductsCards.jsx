@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom'
 import { ShopContext } from '../shopcontext'
 import styled from 'styled-components'
 
-import '../ShopComponents/ShopProducts.css'
-
 const Container = styled.div`
   height: 50vh;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: 30vh;
+  }
+
+  @media (max-width: 575.97px) {
+    height: 40vh;
+  }
 `
 
 const Btn = styled.button`
@@ -18,6 +24,16 @@ const Btn = styled.button`
   border: none;
   color: #fff;
   z-index: 1;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    display: block;
+    padding: 0.25rem 1.5rem;
+  }
+
+  @media (max-width: 575.97px) {
+    display: block;
+    padding: 0.25rem 1.5rem;
+  }
 `
 
 const Card = styled.div`
@@ -53,7 +69,7 @@ const ProductsCards = (props) => {
   };
 
   return <>
-    <Container className="col-3" key={id}>
+    <Container className="col-6 col-md-3 col-lg-3 col-xl-3" key={id}>
       <Card>
         <Img src={image} alt="Product" />
         <Link to={'/details'}>

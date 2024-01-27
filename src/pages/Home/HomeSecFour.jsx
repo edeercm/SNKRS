@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import NewArrivals from '../../components/HomeComponents/NewArrivals/newArrivals'
+import NewArrivals from '../../components/HomeComponents/NewArrivals'
 
 const Label = styled.span`
   text-transform: uppercase;

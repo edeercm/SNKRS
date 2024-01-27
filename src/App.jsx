@@ -3,10 +3,10 @@ import './Reset.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ShopContext from './components/shopcontext'
 import Layout from './components/layout'
-import Home from './pages/Home/home'
-import Shop from './pages/Shop/shop'
-import About from './pages/About/about'
-import Contact from './pages/Contact/contact'
+import Home from './pages/Home/Home'
+import Shop from './pages/Shop/Shop'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
 import Login from './pages/Login/login'
 import ResetPassword from './pages/ResetPassword/resetpassword'
 import CreateAccount from './pages/CreateAccount/createaccount'
@@ -20,9 +20,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='shop' element={<Shop />} />
-          <Route path='about' element={<About />} />
-          <Route path='contact' element={<Contact />} />
+          <Route path='Shop' element={<Shop />} />
+          <Route path='About' element={<About />} />
+          <Route path='Contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
           <Route path='resetpassword' element={<ResetPassword />} />
           <Route path='createaccount' element={<CreateAccount />} />
