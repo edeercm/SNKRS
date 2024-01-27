@@ -3,7 +3,7 @@ import ShopSecOne from './ShopSecOne';
 import ShopSecTwo from './ShopSecTwo';
 import ShopSecThree from './ShopSecThree';
 
-const shop = () => {
+const Compra = () => {
   return <>
     <ShopSecOne />
     <ShopSecTwo />
@@ -11,4 +11,4 @@ const shop = () => {
   </>
 }
 
-export default shop
+export default Compra

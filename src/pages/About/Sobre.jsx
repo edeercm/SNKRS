@@ -4,7 +4,7 @@ import AboutSecTwo from './AboutSecTwo'
 import AboutSecThree from './AboutSecThree'
 import AboutSecFour from './AboutSecFour'
 
-const About = () => {
+const Sobre = () => {
   return <>
     <AboutSecOne />
     <AboutSecTwo />
@@ -13,5 +13,5 @@ const About = () => {
   </>
 }
 
-export default About
+export default Sobre
 
