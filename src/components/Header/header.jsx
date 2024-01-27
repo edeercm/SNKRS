@@ -69,7 +69,6 @@ const Header = () => {
           <HiBars3BottomRight className={`icon ${isOpen ? 'active' : ''}`} />
         </div>
 
-
         <div className="offcanvas offcanvas-end" tabindex="-1" id="newOffcanvasRight" aria-labelledby="offcanvasRightLabel" ref={offcanvasRef}>
           <div className="offcanvas-header">
             <div></div>
@@ -89,6 +88,8 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+
       </div>
     </header>
   </>
