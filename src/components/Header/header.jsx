@@ -8,7 +8,6 @@ import { FiShoppingCart } from 'react-icons/fi'
 import { PiUserBold } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 
-
 const Promo = styled.div`
   height: 1.75rem;
   display: flex;
