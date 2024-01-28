@@ -1,15 +1,13 @@
-import React, { useContext, useState, useRef } from 'react'
+import React, { useContext } from 'react'
+import { ShopContext } from '../shopcontext'
 import styled from 'styled-components'
+import Search from './Search'
+import Hamburger from './Hamburger'
+import logo from '../../assets/images/snkrslabs.png'
 import { FiShoppingCart } from 'react-icons/fi'
 import { PiUserBold } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
-import { ShopContext } from '../shopcontext'
-import logo from '../../assets/images/snkrslabs.png'
 
-import Search from './Search'
-import Hamburger from './Hamburger'
-
-import '../Header/Header.css'
 
 const Promo = styled.div`
   height: 1.75rem;
@@ -27,6 +25,7 @@ const Promo = styled.div`
 const NavBar = styled.header`
   position: sticky;
   top: 0;
+  padding: 20px;
   z-index: 99;
   background-color: #FFFFFF;
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.25);
