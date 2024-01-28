@@ -1,97 +1,130 @@
 import React, { useContext, useState, useRef } from 'react'
+import styled from 'styled-components'
 import { FiShoppingCart } from 'react-icons/fi'
-import { RiSearchLine } from 'react-icons/ri'
 import { PiUserBold } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../shopcontext'
-import { HiBars3BottomRight } from 'react-icons/hi2';
-import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 import logo from '../../assets/images/snkrslabs.png'
-import '../Header/Header.css'
 
 import Search from './Search'
+import Hamburger from './Hamburger'
 
+import '../Header/Header.css'
+
+const Promo = styled.div`
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0C0F0A;
+
+  span {
+    color: #fff;
+    font-size: 1.015rem;
+  }
+`;
+
+const NavBar = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.25);
+`;
+
+const Img = styled.img`
+  width: 40%;
+  object-fit: contain;
+  object-position: center;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+    width: 100%;
+  }
+`
+
+const RWDOne = styled.div`
+  display: block;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    display: block;
+  }
+
+  @media (max-width: 575.97px) {
+    display: none!important;
+  }
+`
+
+const Label = styled.span`
+  font-size: 1.075rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #131313;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.97px) {
+  }
+`
+
+const RWDTwo = styled.div`
+  display: none;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    display: none;
+  }
+
+  @media (max-width: 575.97px) {
+    display: block;
+  }
+`
 
 const Header = () => {
 
   const { getTotalCartProducts } = useContext(ShopContext)
   const totalProducts = getTotalCartProducts()
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const offcanvasRef = useRef(null);
-
-  const closeOffcanvas = () => {
-    if (offcanvasRef.current) {
-      offcanvasRef.current.classList.remove('show'); // Quita la clase 'show' para cerrar el offcanvas
-      const backdrop = document.querySelector('.offcanvas-backdrop'); // Reemplaza '.offcanvas-backdrop' con la clase correcta
-      if (backdrop) {
-        backdrop.remove(); // Elimina el fondo oscuro
-      }
-    }
-  };
-  
   return <>
-    <div className="announcement d-flex align-items-center justify-content-center">
-      <span className='free-label'>¡Free Shipping on all orders!</span>
-    </div>
-
-    <header className='shadow'>
-
-      <div className="container-xxl d-flex align-items-center justify-content-between">
-
-        <Link to='/'><img src={logo} alt="" className='img-fluid logo' /></Link>
-        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          <Link to={'/'}>Home</Link>
-          <Link to={'Shop'}>Shop</Link>
-          <Link to={'About'}>About</Link>
-          <Link to={'Contact'}>Contact</Link>
-        </div>
-        <div className="d-flex " style={{ gap: window.innerWidth <= 480 ? '0.75rem' : '1rem' }}>
-          <Search />
-          <Link to={'login'}>
-            <PiUserBold className='text-dark fs-4' />
-          </Link>
-          <Link to={'cart'}>
-            <FiShoppingCart className='text-dark fs-4' />
-            {totalProducts > 0 && `(${totalProducts})`}
-          </Link>
-        </div>
-
-
-
-        <div className="navbar-toggle"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#newOffcanvasRight"
-          aria-controls="newOffcanvasRight"
-        >
-          <HiBars3BottomRight className={`icon ${isOpen ? 'active' : ''}`} />
-        </div>
-
-        <div className="offcanvas offcanvas-end" tabindex="-1" id="newOffcanvasRight" aria-labelledby="offcanvasRightLabel" ref={offcanvasRef}>
-          <div className="offcanvas-header">
-            <div></div>
-            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <Promo >
+      <span>¡Free Shipping on all orders!</span>
+    </Promo>
+    <NavBar >
+      <div className="container-xxl">
+        <div className="row">
+          <div className='col-4 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-start'>
+            <Link to={'/'}>
+              <Img src={logo} alt="Logo" />
+            </Link>
           </div>
-          <div className="offcanvas-body d-flex flex-column align-items-center justify-content-center">
-            <div className='offcanvas-menu d-flex flex-column text-center'>
-              <Link to={'/'} onClick={closeOffcanvas}>Home</Link>
-              <Link to={'Shop'} onClick={closeOffcanvas}>Shop</Link>
-              <Link to={'About'} onClick={closeOffcanvas}>About</Link>
-              <Link to={'Contact'} onClick={closeOffcanvas}>Contact</Link>
+          <RWDOne className='col-4 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center'>
+            <div className='d-flex flex-row gap-3'>
+              <Link to={'/'}><Label>Home</Label></Link>
+              <Link to={'Shop'}><Label>Shop</Label></Link>
+              <Link to={'About'}><Label>About</Label></Link>
+              <Link to={'Contact'}><Label>Contact</Label></Link>
             </div>
-            <div className="offcanvas-social-icons d-flex  justify-content-center">
-              <Link to={'https://www.linkedin.com/in/edeercm/'} target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></Link>
-              <Link to={'https://github.com/edeercm'} target="_blank" rel="noopener noreferrer"><AiFillGithub /></Link>
-              <Link to={'https://www.instagram.com/edeercm/'} target="_blank" rel="noopener noreferrer"><AiOutlineInstagram /></Link>
+          </RWDOne>
+          <div className='col-5 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-end'>
+            <div className="d-flex flex-row gap-2">
+              <Search />
+              <Link to={'login'}>
+                <PiUserBold className='text-dark fs-4' />
+              </Link>
+              <Link to={'cart'}>
+                <FiShoppingCart className='text-dark fs-4' />
+                {totalProducts > 0 && `(${totalProducts})`}
+              </Link>
             </div>
           </div>
+          <RWDTwo className="col-3">
+            <Hamburger />
+          </RWDTwo>
         </div>
-
-
       </div>
-    </header>
+    </NavBar>
   </>
 }
 
