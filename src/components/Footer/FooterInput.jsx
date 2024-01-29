@@ -10,6 +10,13 @@ const Input = styled.input`
   &:focus-visible {
     outline: none;
   }
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 50%;
+  }
+
+  @media (max-width: 575.97px) {
+  }
 `
 
 const SubmitBtn = styled.button`

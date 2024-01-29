@@ -17,9 +17,13 @@ const Footer = styled.footer`
   }
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: auto;
+    padding: 4rem 0;
   }
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 4rem 0;
   }
 `
 
@@ -50,9 +54,11 @@ const LabelsCont = styled.div`
   }
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    margin-top: 1.5rem;
   }
 
   @media (max-width: 575.97px) {
+    margin-top: 1.5rem;
   }
 `
 
@@ -63,6 +69,7 @@ const Img = styled.img`
   }
 
   @media (max-width: 575.97px) {
+    width: 15%;
   }
 `
 
@@ -109,13 +116,13 @@ const footer = () => {
             </LabelsCont>
           </div>
           <div className="col-md-12 col-lg-3 col-xl-3">
-            <div className='d-flex flex-column gap-2'>
+            <LabelsCont>
               <h5 className='text-uppercase fw-bold fs-5'>Newsletter</h5>
               <FooterInput />
-            </div>
+            </LabelsCont>
           </div>
           <div className='col-12 mt-5'>
-            <div className='d-flex align-items-center justify-content-between'>
+            <div className='d-flex flex-column-reverse flex-lg-row flex-xl-row align-items-center justify-content-center justify-content-lg-between justify-content-xl-between'>
               <span className='fs-6'>&copy; Developed by Eder CM | TROPPY</span>
               <Img src={stripe} alt="Payment" />
             </div>
