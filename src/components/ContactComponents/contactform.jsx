@@ -13,7 +13,7 @@ const SubmitBtn = styled.button`
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #131313;
+  background-color: #0C0F0A;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 `
 
