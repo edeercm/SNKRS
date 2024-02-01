@@ -11,7 +11,6 @@ const Banner = styled.div`
   background-repeat: no-repeat;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-
   }
 
   @media (max-width: 575.97px) {
@@ -21,10 +20,9 @@ const Banner = styled.div`
 
 const ContactSecOne = () => {
   return <>
-      <section>
+    <section>
       <Banner></Banner>
     </section>
-
   </>
 }
 
