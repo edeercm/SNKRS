@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import storeBanner from '../../assets/images/Home/storebanner.jpg'
 
 const Banner = styled.div`
   margin-top: 6rem;
   height: 75vh;
-  background: url(/src/assets/images/store/store1.jpg);
+  background: url(${storeBanner});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

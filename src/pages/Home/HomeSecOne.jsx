@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import bannerImg from '../../assets/images/Home/homebanner.jpg'
+import homeBanner from '../../assets/images/Home/homebanner.jpg'
 
 const Banner = styled.div`
   display: flex;
   width: 100%;
   height: 70vh;
-  background: url(${bannerImg});
+  background: url(${homeBanner});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
