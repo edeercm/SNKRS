@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Banner = styled.div`
   width: 100%;
   height: 70vh;
-  background: url(/src/assets/images/banner/homebanner.jpg);
+  background: url(src/assets/images/banner/homebanner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
