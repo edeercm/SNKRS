@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import shopBanner from '../../assets/images/Shop/shopbanner.jpg'
 
 const Banner = styled.div`
   width: 100%;
@@ -7,7 +8,8 @@ const Banner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(https://drive.google.com/file/d/1EkDXZ4l4MFXnIh0EnAfv1Zp2NzE0xBGf/view?usp=drive_link);
+  background: url(${shopBanner});
+  /* background: url(https://drive.google.com/file/d/1EkDXZ4l4MFXnIh0EnAfv1Zp2NzE0xBGf/view?usp=drive_link); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
