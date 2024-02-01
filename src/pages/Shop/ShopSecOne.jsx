@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import shopBanner from '../../assets/images/Shop/shopbanner.jgp'
+import shopBanner from '../../assets/images/Tienda/shopbanner.jgp'
 
 const Banner = styled.div`
   width: 100%;
