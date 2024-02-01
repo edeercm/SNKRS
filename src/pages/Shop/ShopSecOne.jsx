@@ -9,7 +9,6 @@ const Banner = styled.div`
   align-items: center;
   justify-content: center;
   background: url(${shopBanner});
-  /* background: url(https://drive.google.com/file/d/1EkDXZ4l4MFXnIh0EnAfv1Zp2NzE0xBGf/view?usp=drive_link); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
