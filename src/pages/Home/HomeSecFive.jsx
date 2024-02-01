@@ -4,14 +4,16 @@ import storeBanner from '../../assets/images/Home/storebanner.jpg'
 
 const Banner = styled.div`
   margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 75vh;
   background: url(${storeBanner});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }

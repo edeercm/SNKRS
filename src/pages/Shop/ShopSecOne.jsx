@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import shopBanner from '../../assets/images/Shop/shopbanner.jgp'
 
 const Banner = styled.div`
-  background: url(/src/assets/images/banner/shopbanner.jpg);
+  width: 100%;
   height: 25vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(${shopBanner});  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: 20vh;

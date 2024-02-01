@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import homeBanner from '../../assets/images/Home/homebanner.jpg'
 
 const Banner = styled.div`
-  display: flex;
   width: 100%;
   height: 70vh;
   background: url(${homeBanner});

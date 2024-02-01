@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import contactBanner from '../../assets/images/Contact/contactbanner.jpg'
 
 const Banner = styled.div`
+  width: 100%;
   height: 25vh;
-  background-image: url(/src/assets/images/contact/contactus.jpg);
+  background: url(${contactBanner});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
