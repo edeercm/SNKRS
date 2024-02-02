@@ -11,7 +11,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    height: 40vh;
+    height: 35vh;
   }
 `
 
